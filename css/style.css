@@ -13,8 +13,12 @@ body {
   background-color: #008F95;
   font-size: 22px;
   color: #FFFFFF;
-/*  display: grid;
-  grid-template-columns: auto, 0px;*/
+  display: grid;
+  grid-template-columns: auto 0px;
+}
+
+h3 {
+  margin: 0 3rem;
 }
 
 nav {
@@ -73,6 +77,10 @@ header {
   flex-wrap: wrap;
 }
 
+.about:hover {
+  border-style: solid;
+}
+
 .about h2 {
 	margin: 0;
 }
@@ -101,6 +109,10 @@ header {
   width: 100%;
   margin: 2rem auto;
   border-radius: 5rem 2rem;
+}
+
+.project:hover {
+  border-style: solid;
 }
 
 .content {
@@ -147,18 +159,19 @@ a:hover {
 }
 
 #button {
-/*  position: sticky;
-  top: 0;*/
-/*  margin-top: 100vh;
-  bottom: 20px;*/
+  position: sticky;
+  bottom: 1rem;
+  margin-right: 0.5rem;
+  margin-top: 103vh;
   border: none;
   background-color: #E24E42;
   color: #FFFFFF;
   opacity: 0.7;
   padding: 1rem; 
   border-radius: 10px; 
-  font-size: 18px; 
-  width: 4rem;
+  font-size: 18px;
+  place-self: end;
+  white-space: nowrap;
 }
 
 #button:hover {
@@ -204,26 +217,10 @@ footer {
   }
 }
 
-
-h3 {
-  margin: 0 3rem;
-}
-
 @media only screen and (max-width: 600px) {
-  h1 {
-    font-size: 20px;
-  }
-  
-  h2 {
-    font-size: 18px;
-  }
-  
-  h3 {
+
+  body {
     font-size: 16px;
-  }
-  
-  p {
-    font-size: 14px;
   }
   
   .girl {
@@ -246,14 +243,6 @@ h3 {
     padding: 0.8rem;
   }
   
-  .links {
-    font-size: 12px;
-  }
-  
-  .contact a {
-    font-size: 50px;
-  }
-  
   .content {
     gap: 1rem;
   }
@@ -262,7 +251,6 @@ h3 {
     width: 90%;
   }
 }
-
 
 @media only screen and (max-width: 480px) {
   
@@ -274,5 +262,3 @@ h3 {
     width: 90%;
   }
 }
-
-
