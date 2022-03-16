@@ -67,6 +67,7 @@ header {
   background-color: #E9B000;
   border-radius: 5rem;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
 .arrow a {
@@ -99,6 +100,7 @@ header {
   flex-wrap: wrap;
   border-style: solid;
   border-color: #2E8B57;
+  justify-content: center;
 }
 
 .about:hover {
@@ -151,6 +153,8 @@ header {
 .content img {
   grid-row: 1 / 2;
   border-radius: 3rem;
+  border-style: solid;
+  border-color: #FFFFFF;
 }
 
 .desc {
@@ -211,7 +215,7 @@ footer {
 
 @media only screen and (max-width:932px) {
   
-  .content{
+  .content {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -220,14 +224,6 @@ footer {
   
   .content img {
     width: 80%;
-  }
-  
-  .about {
-    justify-content: center;
-  }
-  
-  header {
-    justify-content: center;
   }
 }
 
