@@ -21,26 +21,39 @@ h3 {
   margin: 0 3rem;
 }
 
-nav {
-  padding: 1rem;
+#ham-menu-items {
+  margin: 0;
+  padding: 0;
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  flex-wrap: wrap;
-  background-color: #E24E42;
-  position: sticky;
-  top: 0;
+  flex-direction: row;
 }
 
-nav a {
+#ham-menu-items li {
+  list-style-type: none;
+}
+
+#ham-nav label,
+ #hamburger {
+  display: none;
+}
+
+#ham-nav {
+  text-align: center;
+  background-color: #E24E42;
+  padding: 1rem;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+#ham-nav a {
   text-decoration: none;
   color: #FFFFFF;
   font-weight: bold;
   padding: 0 1rem;
-}
-
-.nav2 {
-  display: none;
 }
 
 header {
@@ -54,6 +67,15 @@ header {
   background-color: #E9B000;
   border-radius: 5rem;
   flex-wrap: wrap;
+}
+
+.arrow a {
+  color: #E24E42;
+}
+
+.arrow {
+  display: flex;
+  justify-content: center;
 }
 
 .girl {
@@ -75,10 +97,12 @@ header {
   align-items: start;
   gap: 2rem;
   flex-wrap: wrap;
+  border-style: solid;
+  border-color: #2E8B57;
 }
 
 .about:hover {
-  border-style: solid;
+  border-color: #FFFFFF;
 }
 
 .about h2 {
@@ -109,10 +133,12 @@ header {
   width: 100%;
   margin: 2rem auto;
   border-radius: 5rem 2rem;
+  border-style: solid;
+  border-color: #E9B000;
 }
 
 .project:hover {
-  border-style: solid;
+  border-color: #FFFFFF;
 }
 
 .content {
@@ -150,7 +176,7 @@ a {
 
 .contact a {
   color: #E24E42;
-  font-size: 75px;
+  font-size: 5rem;
   padding: 1rem;
 }
 
@@ -168,8 +194,8 @@ a:hover {
   color: #FFFFFF;
   opacity: 0.7;
   padding: 1rem; 
-  border-radius: 10px; 
-  font-size: 18px;
+  border-radius: 1rem;
+  font-size: 1rem;
   place-self: end;
   white-space: nowrap;
 }
@@ -182,7 +208,6 @@ footer {
   margin: 1rem;
   font-size: 0.75rem;
 }
-
 
 @media only screen and (max-width:932px) {
   
@@ -206,14 +231,26 @@ footer {
   }
 }
 
-@media only screen and (max-width: 623px) {
-  .nav1 {
-    display: none;
+@media screen and (max-width: 623px) {
+
+  #ham-menu-items {
+    flex-direction: column;
+  }
+
+  #ham-menu-items li {
+    text-align: center;
   }
   
-  .nav2 {
-    display: flex;
-    justify-content: center;
+  #ham-nav label {
+    display: inline-block;
+  }
+  
+  #ham-menu-items {
+    display: none;
+  }
+
+  #ham-nav input:checked ~ #ham-menu-items {
+    display: block;
   }
 }
 
