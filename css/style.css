@@ -1,0 +1,297 @@
+* {
+  box-sizing: border-box;
+  font-family: courier, sans-serif;
+}
+
+html { 
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #008F95;
+  font-size: 22px;
+  color: #FFFFFF;
+  display: grid;
+  grid-template-columns: auto 0px;
+}
+
+h3 {
+  margin: 0 3rem;
+}
+
+#ham-menu-items {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+#ham-menu-items li {
+  list-style-type: none;
+}
+
+#ham-nav label,
+#hamburger {
+  display: none;
+}
+
+#ham-nav {
+  text-align: center;
+  background-color: #E24E42;
+  padding: 1rem;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+#ham-nav a {
+  text-decoration: none;
+  color: #FFFFFF;
+  font-weight: bold;
+  padding: 0 1rem;
+}
+
+header {
+  padding: 4rem;
+  width: 80%;
+  display: flex;
+  align-items: start;
+  gap: 2rem;
+  margin: 1rem auto;
+  color: #FFFFFF;
+  background-color: #E9B000;
+  border-radius: 5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.arrow a {
+  color: #E24E42;
+}
+
+.arrow {
+  display: flex;
+  justify-content: center;
+}
+
+.girl {
+  border-radius: 50%;
+  height: auto;
+  width: 16rem;
+}
+
+.intro h1 {
+  margin: 0;
+}
+
+.about {
+  background-color: #2E8B57;
+  padding: 4rem;
+  border-radius: 5rem;
+  margin: 1rem 2rem;
+  display: flex;
+  align-items: start;
+  gap: 2rem;
+  flex-wrap: wrap;
+  border-style: solid;
+  border-color: #2E8B57;
+  justify-content: center;
+}
+
+.about:hover {
+  border-color: #FFFFFF;
+}
+
+.about h2 {
+  margin: 0;
+}
+
+.text {
+  grid-row: 1 / 2;
+  margin: 0;
+}
+
+.grad img {
+  border-radius: 50%;
+  width: 16rem;
+  height: auto;
+}
+
+.portfolio {
+  padding: 1rem;
+  width: 80%;
+  color: #FFFFFF;
+  margin: 1rem auto;
+}
+
+.project {
+  padding: 1.25rem;
+  background-color: #E9B000;
+  width: 100%;
+  margin: 2rem auto;
+  border-radius: 5rem 2rem;
+  border-style: solid;
+  border-color: #E9B000;
+}
+
+.project:hover {
+  border-color: #FFFFFF;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 2rem;
+  margin: 2rem;
+}
+
+.content img {
+  grid-row: 1 / 2;
+  border-radius: 3rem;
+  border-style: solid;
+  border-color: #FFFFFF;
+}
+
+.desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+a {
+  text-decoration: none;
+  background-color: transparent;
+}
+
+.links {
+  text-align: center;
+}
+
+.contact {
+  background-color: #2E8B57;
+  color: #FFFFFF;
+  padding: 1rem;
+}
+
+.contact a {
+  color: #E24E42;
+  font-size: 5rem;
+  padding: 1rem;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+#button {
+  position: sticky;
+  bottom: 1rem;
+  margin-right: 0.5rem;
+  margin-top: 103vh;
+  border: none;
+  background-color: #E24E42;
+  color: #FFFFFF;
+  opacity: 0.7;
+  padding: 1rem; 
+  border-radius: 1rem;
+  font-size: 1rem;
+  place-self: end;
+  white-space: nowrap;
+}
+
+#button:hover {
+  opacity: 1; 
+}
+
+footer {
+  margin: 1rem;
+  font-size: 0.75rem;
+}
+
+@media only screen and (max-width: 932px) {
+  
+  .content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .content img {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 623px) {
+
+  #ham-menu-items {
+    flex-direction: column;
+  }
+
+  #ham-menu-items li {
+    text-align: center;
+  }
+  
+  #ham-nav label {
+    display: inline-block;
+  }
+  
+  #ham-menu-items {
+    display: none;
+  }
+
+  #ham-nav input:checked ~ #ham-menu-items {
+    display: block;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+
+  body {
+    font-size: 16px;
+  }
+  
+  .girl {
+    width: 60%;
+  }
+  
+  .grad img {
+    width: 60%;
+  }
+  
+  header {
+    padding: 3rem;
+  }
+  
+  .about {
+    padding: 3rem;
+  }
+  
+  .project {
+    padding: 0.8rem;
+  }
+  
+  .content {
+    gap: 1rem;
+  }
+  
+  .content img {
+    width: 90%;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  
+  .girl {
+    width: 90%;
+  }
+
+  .grad img {
+    width: 90%;
+  }
+}
