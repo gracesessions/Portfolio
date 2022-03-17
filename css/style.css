@@ -34,7 +34,7 @@ h3 {
 }
 
 #ham-nav label,
- #hamburger {
+#hamburger {
   display: none;
 }
 
@@ -108,7 +108,7 @@ header {
 }
 
 .about h2 {
-	margin: 0;
+  margin: 0;
 }
 
 .text {
@@ -213,7 +213,7 @@ footer {
   font-size: 0.75rem;
 }
 
-@media only screen and (max-width:932px) {
+@media only screen and (max-width: 932px) {
   
   .content {
     display: flex;
@@ -260,7 +260,7 @@ footer {
     width: 60%;
   }
   
-  .grad img{
+  .grad img {
     width: 60%;
   }
   
