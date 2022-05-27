@@ -12,17 +12,20 @@ $title-font: 'Raleway', sans-serif;
 }
 
 body {
-  margin: 0;
+  margin-right: 0;
   padding: 0;
   background-color: #FFFFFF;
   font-size: 22px;
   color: $text-colour;
+  //width: 100%;
+  //height: 100%;
+  margin-bottom: 2rem;
 
   nav {
     background-color: $bg-colour;
     text-align: center;
     padding: 1rem;
-    width: 100%;
+    //width: 100%;
     position: sticky;
     top: 0;
     font-size: 1.5rem;
@@ -36,7 +39,6 @@ body {
         border: solid #01796f;
         font-weight: 300;
         border-radius: 0.4rem;
-        //color: $bg-colour;
       }
 
       #dropdown-content {
@@ -44,7 +46,7 @@ body {
         margin-bottom: 0;
         display: none;
 
-        #nav-items {
+        .nav-items {
           margin-top: 0;
           padding: 0;
           display: flex;
@@ -79,25 +81,25 @@ body {
   }
 
   header {
-    width: 80%;
     display: flex;
     margin: 1rem auto;
     flex-wrap: wrap;
     justify-content: center;
+    text-align: center;
 
     .intro {
       h1 {
         font-weight: 800;
-        font-size: 3.2rem;
+        font-size: 2.5rem;
       }
 
       p {
-        font-size: 1.5rem;
+        font-size: 1.2rem;
         overflow: hidden;
         color: #01796f;
         border-right: .15em solid #01796f;
         white-space: nowrap;
-        margin: 0 auto;
+        margin: 0;
         letter-spacing: .15em;
         animation:
                 typing 3.5s steps(40, end),
@@ -108,7 +110,6 @@ body {
   }
     .btnContainer {
       display: flex;
-      //flex-direction: row;
       align-items: center;
       justify-content: center;
 
@@ -116,26 +117,25 @@ body {
       background-color: transparent;
       border: none;
       display: flex;
-      //flex-direction: row;
-      //justify-content: center;
-      //align-items: center;
       font-size: 3rem;
       i {
         color: #01796f;
         margin-top: 4rem;
         align-self: center;
       }
+
+      .dark-mode:hover {
+        opacity: 0.7%;
+      }
     }
     }
-
-
 
 
 
   .stack-wrapper {
     display: flex;
-    justify-content: space-between;
-    margin: 4rem 2rem;
+    justify-content: space-evenly;
+    margin: 4rem 0;
     i {
       font-size: 2rem;
     }
@@ -209,6 +209,9 @@ body {
             font-size: 1rem;
             z-index: 1;
           }
+           img {
+             width: 8rem;
+           }
         }
 
         .links {
@@ -226,7 +229,7 @@ body {
 
       a {
         color: $bg-colour;
-        font-size: 5rem;
+        font-size: 3rem;
         padding: 1rem;
       }
 
@@ -235,11 +238,11 @@ body {
       }
 
       .form-container {
-        width: 30rem;
+        width: 20rem;
 
 
         input, textarea {
-          width: 30rem;
+          width: 90%;
           padding: 0.8rem;
           border: none;
           border-radius: 0.2rem;
@@ -288,7 +291,7 @@ h3 {
 #topBtn {
   position: sticky;
   bottom: 1rem;
-  margin-left: 80%;
+  margin-left: 75%;
   margin-top: 103vh;
   border: none;
   background-color: #01796f;
@@ -305,11 +308,32 @@ h3 {
   opacity: 1;
 }
 
-//.dark-mode {
-//  background-color: $text-colour;
-//  color: $bg-colour;
-//
-//}
+@media only screen and (min-width: 860px) {
+  //.reg-menu {
+  //  display: block;
+  //}
+  //.dropdown {
+  //  display: none;
+  //}
+  //.grad img {
+  //  width: 40%;
+  //}
+  //
+  //.text-container {
+  //  width: 20%;
+  //}
+
+  .about {
+    margin-left: 6rem;
+    margin-right: 6rem;
+     .text-container {
+       .text {
+         font-size:1.4rem;
+       }
+     }
+  }
+
+}
 
 //.paused {
 //  animation-play-state: paused;
