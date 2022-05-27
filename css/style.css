@@ -147,6 +147,7 @@ body .portfolio .project {
   border: #01796f solid;
   padding: 1rem;
   border-radius: 0.4rem;
+  max-width: 23rem;
 }
 body .portfolio .project .content {
   display: flex;
@@ -166,8 +167,8 @@ body .portfolio .project .content .desc p {
   font-size: 1rem;
   z-index: 1;
 }
-body .portfolio .project .content .desc img {
-  width: 8rem;
+body .portfolio .project .content img {
+  max-width: 25rem;
 }
 body .portfolio .project .content .links {
   margin-top: 1rem;

@@ -183,13 +183,16 @@ body {
   }
 
   .portfolio {
-  padding: 2rem;
+    padding: 2rem;
+    //display: flex;
+    //flex-wrap: wrap-reverse;
 
     .project {
       margin-top: 2rem;
       border: #01796f solid;
       padding: 1rem;
       border-radius: 0.4rem;
+      max-width: 23rem;
 
       .content{
         display: flex;
@@ -209,9 +212,9 @@ body {
             font-size: 1rem;
             z-index: 1;
           }
-           img {
-             width: 8rem;
-           }
+        }
+        img {
+          max-width: 25rem;
         }
 
         .links {
@@ -239,7 +242,6 @@ body {
 
       .form-container {
         width: 20rem;
-
 
         input, textarea {
           width: 90%;
