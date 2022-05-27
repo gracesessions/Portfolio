@@ -80,16 +80,18 @@ body header .intro p {
   animation: typing 3.5s steps(40, end), blink-caret 0.75s step-end infinite;
   animation-play-state: running;
 }
-body header .dark-mode {
+body .btnContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+body .btnContainer .dark-mode {
   background-color: transparent;
   border: none;
   display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
   font-size: 3rem;
 }
-body header .dark-mode i {
+body .btnContainer .dark-mode i {
   color: #01796f;
   margin-top: 4rem;
   align-self: center;

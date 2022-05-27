@@ -105,13 +105,20 @@ body {
         animation-play-state: running;
       }
     }
+  }
+    .btnContainer {
+      display: flex;
+      //flex-direction: row;
+      align-items: center;
+      justify-content: center;
+
     .dark-mode {
       background-color: transparent;
       border: none;
       display: flex;
-      flex-direction: row;
-      justify-content: center;
-      align-items: center;
+      //flex-direction: row;
+      //justify-content: center;
+      //align-items: center;
       font-size: 3rem;
       i {
         color: #01796f;
@@ -119,7 +126,8 @@ body {
         align-self: center;
       }
     }
-  }
+    }
+
 
 
 
