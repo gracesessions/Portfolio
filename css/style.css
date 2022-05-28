@@ -26,6 +26,7 @@ body nav {
 }
 body nav .dropdown .dropbtn {
   background-color: #FFFFFF;
+  color: #000000;
   border: solid #01796f;
   font-weight: 300;
   border-radius: 0.4rem;
@@ -139,25 +140,28 @@ body .about .text-container .text {
   border: 2px #000000 solid;
   border-radius: 0.4rem;
 }
+body #port {
+  margin-left: 2rem;
+}
 body .portfolio {
   padding: 2rem;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
 }
 body .portfolio .project {
-  margin-top: 2rem;
+  margin-bottom: 2rem;
   border: #01796f solid;
   padding: 1rem;
   border-radius: 0.4rem;
-  max-width: 23rem;
+  max-width: 20rem;
+  box-shadow: 0 0.2rem 0.5rem #01796f;
 }
 body .portfolio .project .content {
   display: flex;
-  flex-direction: column;
 }
 body .portfolio .project .content .desc {
   font-weight: 600;
-  display: flex;
-  flex-wrap: wrap;
-  align-content: space-between;
 }
 body .portfolio .project .content .desc p {
   background-color: #01796f;
@@ -255,12 +259,44 @@ h3 {
   opacity: 1;
 }
 
-@media only screen and (min-width: 860px) {
-  .about {
+@media only screen and (min-width: 800px) {
+  body header .intro h1 {
+    font-size: 3.5rem;
+  }
+  body header .intro p {
+    font-size: 1.6rem;
+  }
+  body nav .dropdown {
+    display: none;
+  }
+  body nav .reg-menu {
+    display: block;
+  }
+  body nav .reg-menu .nav-items {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  body nav .reg-menu .nav-items li {
+    list-style-type: none;
+  }
+  body nav .reg-menu .nav-items li a {
+    text-decoration: none;
+    color: #000000;
+    padding: 0 1rem;
+    border: #FFFFFF solid;
+    border-radius: 0.2rem;
+  }
+  body nav .reg-menu .nav-items li a:hover {
+    border-color: #01796f;
+  }
+  body .about {
     margin-left: 6rem;
     margin-right: 6rem;
   }
-  .about .text-container .text {
+  body .about .text-container .text {
     font-size: 1.4rem;
   }
 }
