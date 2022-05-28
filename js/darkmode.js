@@ -1,28 +1,4 @@
 
-// function pauseAnimation() {
-//     // let element = document.body.a;
-//     // element.style.animationPlayState = 'paused';
-//     // let running = element.style.animationPlayState === 'running';
-//     // element.style.animationPlayState = running ? 'paused' : 'running';
-//
-//
-// }
-//
-// const pauseButton = document.querySelector('.pause');
-
-// const handlePauseButtonClick = (event) => {
-//     event.preventDefault();
-//
-//     const intro = document.querySelector('.intro').p;
-//
-//     intro.style.animationPlayState = 'paused';
-//
-// }
-//
-// pauseButton.addEventListener('click', handlePauseButtonClick);
-
-
-
 const darkButton = document.querySelector('.dark-mode');
 
 const handleDarkButtonClick = (event) => {

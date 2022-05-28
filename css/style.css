@@ -168,7 +168,6 @@ body .portfolio .project .content {
   justify-content: space-between;
 }
 body .portfolio .project .content p {
-  font-weight: 600;
   background-color: #01796f;
   color: #FFFFFF;
   padding: 1rem;
@@ -289,7 +288,7 @@ h3 {
   }
   body nav .reg-menu .nav-items li a {
     text-decoration: none;
-    color: #000000;
+    color: #01796f;
     padding: 0 1rem;
     border: #FFFFFF solid;
     border-radius: 0.2rem;
@@ -311,11 +310,24 @@ h3 {
     margin-right: 10rem;
   }
   .about .text-container .text {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
   }
 
   #topBtn {
-    margin-left: 90%;
+    margin-left: 80%;
+  }
+}
+@media only screen and (min-width: 1200px) {
+  .about {
+    margin-left: 12rem;
+    margin-right: 12rem;
+  }
+  .about .text-container .text {
+    font-size: 1.6rem;
+  }
+
+  #topBtn {
+    margin-left: 80%;
   }
 }
 
