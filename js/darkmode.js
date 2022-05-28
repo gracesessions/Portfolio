@@ -1,4 +1,3 @@
-
 const darkButton = document.querySelector('.dark-mode');
 
 const handleDarkButtonClick = (event) => {
